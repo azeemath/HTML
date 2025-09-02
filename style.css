@@ -1,7 +1,57 @@
-table,th,td{
-    border: 1px solid black;
+*{
+    background-image: url(https://media.architecturaldigest.com/photos/66a914f1a958d12e0cc94a8e/16:9/w_2992,h_1683,c_limit/DSC_5903.jpg);
+    background-size: cover; 
+    background-attachment: fixed; 
 }
 
-h1 {
+table,th,td{
+    border: 1px solid black;
+    color: black;
+    background: #fff;
+}
+
+th,td {
+    padding: 5px;
+}
+
+h1,a {
     color: blueviolet;
 }
+
+li {
+    color: #fff;
+}
+
+p {
+    color: #fff; 
+    margin: 30px 0;
+    line-height: 25px;
+}
+
+.table {
+    margin: 30px 0;
+    font-size: 1.5rem;
+}
+
+caption {
+    color: blueviolet;
+    font-size: xx-large;
+}
+
+
+mark {
+    background: blueviolet;
+}
+
+img,audio,video {
+    margin: 30px 0;
+}
+
+.link-align {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: x-large;
+}
+
+
