@@ -54,6 +54,14 @@ img,audio,video {
     font-size: x-large;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+   color: blue; 
+}
+
 .box {
     width: 100px;
     height: 100px;
