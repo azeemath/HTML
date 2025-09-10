@@ -4,136 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="icon" href="data:image/jpeg;base64,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">
     <title>HTML</title>
   
 </head>
 <body>
+  
+  <nav class="navbar">
+      <h1>Carwale</h1>
+      <div class="navbar-link">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+      </div>
+      <div class="navbar-button">
+         <button type="button">Sign In</button>
+      </div>
+  </nav>
 
-    <h1>Formatting Tags</h1>
-    <ol type="1">
-        <li> <b>Hello World b</b><br> </li>
-        <li> <em>Hello World em</em><br> </li>
-        <li> <i>Hello World i</i><br> </li>
-        <li> <u>Hello World u</u><br> </li>
-        <li> <sub>Hello World sub</sub><br> </li>
-        <li> <sup>Hello World sup</sup><br> </li>
-        <li> <strong>Hello World strong</strong><br> </li>
-        <li> <del>Hello World del</del><br> </li>
-        <li> <mark>Hello World mark</mark><br> </li>
-    </ol>
+  <header class="header">
+       <div class="header-text">
+          <span>We Bring Them Top Deals</span>
+          <p>Find Greate Part Auto Deals For YOur Car</p>
+          <audio controls>
+              <source src="assets/audio-club-edyn-343275.mp3" type="audio/mp3">
+          </audio>
+          <button type="button">Shop Now</button>
+       </div>
+  </header>
+    
+   
+  <section class="section">
+          <h1>Recent Cars</h1>
 
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <div class="link-align">
-        <a href="service.html">Service page</a>
-        <a href="https://www.flipkart.com/">Flipkart</a>
-        <a href="https://www.amazon.in/">Amazon</a>
-    </div>
+          <div class="section-sub">
+            <div class="card" style="width: 18rem;">
+              <img src="https://imgd.aeplcdn.com/310x174/n/cw/ec/106815/creta-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80" class="card-img-top" alt="Hyundai creta">
+              <div class="card-body">
+                <h5 class="card-title">Hyundai creta</h5>
+                <p class="card-text">Rs.11.11 Lakh</p>
+                <button type="button">Book Now</button>
+              </div>
+            </div>
+  
+            <div class="card" style="width: 18rem;">
+              <img src="https://imgd.aeplcdn.com/310x174/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-76.jpeg?isig=0&q=80" class="card-img-top" alt="Tata Nexon">
+              <div class="card-body">
+                <h5 class="card-title">Tata Nexon</h5>
+                <p class="card-text">Rs.8.00 Lakh</p>
+                <button type="button">Book Now</button>
+              </div>
+            </div>
+  
+            <div class="card" style="width: 18rem;">
+              <img src="https://imgd.aeplcdn.com/310x174/n/cw/ec/40432/scorpio-n-exterior-right-front-three-quarter-2.png?isig=0&q=80" class="card-img-top" alt="Mahindra Scorpio N">
+              <div class="card-body">
+                <h5 class="card-title">Mahindra Scorpio N</h5>
+                <p class="card-text">Rs.13.99 Lakh</p>
+                <button type="button">Book Now</button>
+              </div>
+            </div>
 
-    <img src="./assets/Car image.png" alt="car image" width="500"/><br>
+            <div class="card" style="width: 18rem;">
+              <img src="https://imgd.aeplcdn.com/320x180/n/cw/ec/47051/compass-exterior-right-front-three-quarter-83.jpeg?isig=0&q=80" class="card-img-top" alt="Jeep Compass">
+              <div class="card-body">
+                <h5 class="card-title">Jeep Compass</h5>
+                <p class="card-text">Rs.18.99 Lakh</p>
+                <button type="button">Book Now</button>
+              </div>
+            </div>
 
-    <audio controls>
-        <source src="assets/audio-club-edyn-343275.mp3" type="audio/mp3">
-    </audio><br>
-    <video controls width="50%">
+            <div class="card" style="width: 18rem;">
+              <img src="https://imgd.aeplcdn.com/320x180/n/cw/ec/112839/glanza-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80" class="card-img-top" alt="Toyoto Glanza">
+              <div class="card-body">
+                <h5 class="card-title">Toyoto Glanza</h5>
+                <p class="card-text">Rs.6.99 lakh</p>
+                <button type="button">Book Now</button>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="https://imgd.aeplcdn.com/320x180/n/cw/ec/173325/magnite-facelift-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80" class="card-img-top" alt="Nissan Magnite">
+              <div class="card-body">
+                <h5 class="card-title">Nissan Magnite</h5>
+                <p class="card-text">Rs.6.14 Lakh</p>
+                <button type="button">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+  </section>
+
+  <main class="main">
+    <video autoplay muted loop width="50%" class="main-video">
         <source src="assets/bmw.mp4" type="video/mp4"> 
     </video>
 
+    <h1>Car Details</h1>
+    <span>Car Models Overview</span>
     <table class="table">
-        <caption>Stock Overview</caption>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Item</th>
-            <th>Category</th>
-            <th>Quantity</th>
-            <th>Unit Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Apples</td>
-            <td>Fruit</td>
-            <td>35</td>
-            <td>$1.20</td>
-          </tr>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>Year</th>
+          <th>Price ($)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Toyota</td>
+          <td>Corolla</td>
+          <td>2022</td>
+          <td>20,000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Honda</td>
+          <td>Civic</td>
+          <td>2021</td>
+          <td>22,500</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Ford</td>
+          <td>Mustang</td>
+          <td>2023</td>
+          <td>35,000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Chevrolet</td>
+          <td>Camaro</td>
+          <td>2020</td>
+          <td>33,500</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>BMW</td>
+          <td>3 Series</td>
+          <td>2022</td>
+          <td>41,000</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Mercedes</td>
+          <td>C-Class</td>
+          <td>2023</td>
+          <td>45,500</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Audi</td>
+          <td>A4</td>
+          <td>2021</td>
+          <td>39,800</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Kia</td>
+          <td>Sportage</td>
+          <td>2022</td>
+          <td>27,000</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Hyundai</td>
+          <td>Elantra</td>
+          <td>2020</td>
+          <td>19,500</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Tesla</td>
+          <td>Model 3</td>
+          <td>2023</td>
+          <td>42,000</td>
+        </tr>
+      </tbody>
+    </table>
+       
+  </main>
 
-          <tr>
-            <td>2</td>
-            <td>Bananas</td>
-            <td>Fruit</td>
-            <td>42</td>
-            <td>$0.50</td>
-          </tr>   
+  <footer class="footer">
+       <div id="Contact">
+          <h1>Contact Us</h1>
+          <span>Language: English</span>
+          <div class="footer-text">
+            <p>Address:
+               CarTrade Tech Limited, 12th floor, Vishwaroop IT Park, Sector 30A, Vashi, Navi Mumbai - 400705
+            </p>
+            <p>Phone: (022) 6739 888 </p>
+            <p>Email: contact@carwale.com</p>
+              
+          </div>
+          <div class="footer-icon">
+             <span>contact with us</span>
+             <img  src="assets/github.png" alt="github icon" width="30px"/>
+             <img  src="assets/instagram.png" alt="instagram icon" width="30px"/>
+             <img  src="assets/twitter.png" alt="twitter icon" width="30px"/>
+          </div>
+       </div>
+  </footer>
 
-          <tr>
-            <td>3</td>
-            <td>Broccoli</td>
-            <td>Vegetable</td>
-            <td>18</td>
-            <td>$1.10</td>
-          </tr>
 
-          <tr>
-            <td>4</td>
-            <td>Carrots</td>
-            <td>Vegetable</td>
-            <td>27</td>
-            <td>$0.80</td>
-          </tr>
-          
-          <tr>
-            <td>5</td>
-            <td>Milk (1L)</td>
-            <td>Dairy</td>
-            <td>20</td>
-            <td>$1.40</td>
-          </tr>
-
-          <tr>
-            <td>6</td>
-            <td>Yogurt</td>
-            <td>Dairy</td>
-            <td>16</td>
-            <td>$0.90</td>
-          </tr>
-
-          <tr>
-            <td>7</td>
-            <td>Bread</td>
-            <td>Bakery</td>
-            <td>24</td>
-            <td>$1.30</td>
-          </tr>
-
-          <tr>
-            <td>8</td>
-            <td>Eggs (12)</td>
-            <td>Dairy</td>
-            <td>12</td>
-            <td>$2.50</td>
-          </tr>
-
-          <tr>
-            <td>9</td>
-            <td>Rice (1kg)</td>
-            <td>Grains</td>
-            <td>30</td>
-            <td>$1.80</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Pasta</td>
-            <td>Grains</td>
-            <td>25</td>
-            <td>$1.10</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="box"></div>
 </body>
 </html>

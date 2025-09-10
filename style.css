@@ -1,7 +1,9 @@
+/*background-image: url(https://media.architecturaldigest.com/photos/66a914f1a958d12e0cc94a8e/16:9/w_2992,h_1683,c_limit/DSC_5903.jpg);
+background-size: cover; 
+background-attachment: fixed; */
 *{
-    background-image: url(https://media.architecturaldigest.com/photos/66a914f1a958d12e0cc94a8e/16:9/w_2992,h_1683,c_limit/DSC_5903.jpg);
-    background-size: cover; 
-    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
 }
 
 table,th,td{
@@ -14,67 +16,178 @@ th,td {
     padding: 5px;
 }
 
-h1,a {
-    color: blueviolet;
-}
-
-li {
-    color: #fff;
-}
-
-p {
-    color: #fff; 
-    margin: 30px 0;
-    line-height: 25px;
-}
 
 .table {
     margin: 30px 0;
     font-size: 1.5rem;
 }
 
-caption {
-    color: blueviolet;
-    font-size: xx-large;
-}
 
 
-mark {
-    background: blueviolet;
-}
 
-img,audio,video {
-    margin: 30px 0;
-}
-
-.link-align {
+.navbar {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-size: x-large;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 15px;
 }
 
-a {
-    text-decoration: none;
+.navbar h1 {
+    font-size:50px;
+    margin: 0 30px;
+    color: white;
 }
 
-a:hover {
-   color: blue; 
-}
-
-.box {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    background: red;
+.navbar-link{
+    display: flex;
+    align-items: center;
     position: relative;
-    animation: mymove 5s;
-  
+    right: 40px;
+    justify-content: space-between;
+    gap: 30px;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
 }
 
+.navbar-link a {
+    text-decoration: none;
+    color: white;
+}
 
-@keyframes mymove {
-   from {left: 0px;}
-   to {left: 200px;background-color: blue;}
+.navbar-link a:hover {
+    color: lightblue;
+}
+
+.navbar-button button {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px 15px;
+    background: white;
+    border-radius: 40px;
+    border: none;
+    position: relative;
+    right: 20px;
+}
+
+.navbar-button button:hover {
+    color:blue;
+}
+
+.header {
+    background-image: url(https://images.pexels.com/photos/1335077/pexels-photo-1335077.jpeg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.header-text {
+    margin: 200px;
+    position: relative;
+    right: 80px;
+    bottom: 70px;
+}
+.header p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 60px;
+    max-width: 500px;
+    letter-spacing: 0.4rem;
+    margin-top: 20px;
+}
+
+.header-text span {
+    font-size: large;
+    color: white;
+}
+
+.header button {
+    display: flex;
+    padding: 15px 40px;
+    background: rgb(216, 46, 46);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header button:hover {
+    background:  rgb(255, 92, 92);
+}
+
+.section-sub {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 100px;
+    row-gap: 30px;
+}
+
+.section h1 {
+    color: black;
+    margin: 50px 10px;
+}
+
+.card button {
+    display: flex;
+    padding: 10px 25px;
+    background: rgb(216, 46, 46);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card button:hover {
+    background:  rgb(255, 92, 92);
+}
+
+.main-video {
+    position: relative;
+    left: 50px;
+    width: 90%;
+    object-fit: cover; 
+    z-index: -1;
+    margin: 40px 0;
+}
+
+.main h1 {
+    font-weight: bold;
+}
+
+.main span {
+    font-size: 20px;
+   
+}
+
+.footer {
+    background-color: #002b51;
+    margin: 100px 0;
+    color: white;
+}
+
+.footer h1 {
+      padding: 30px 0;
+}
+.footer span {
+    margin: 30px 10px;
+}
+
+.footer-text {
+    letter-spacing: 0.1rem;
+    line-height: 30px;
+    margin: 30px;
+}
+
+.footer-icon img {
+   margin: 20px;
+}
+
+.footer-icon {
+    padding-bottom: 20px;
 }
 
