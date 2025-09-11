@@ -189,3 +189,41 @@ th,td {
     padding-bottom: 20px;
 }
 
+.about {
+    border:1px solid black;
+    margin: 70px;
+    padding: 50px;
+}
+
+.about h1 {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-weight: bold;
+}
+
+.about-align {
+    display: flex;
+    align-items: center;
+    max-width: 999px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.about-text span {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: blue;
+}
+
+.about-text li {
+    color: blue;
+}
+
